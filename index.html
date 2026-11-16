@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF7F0">
+  <meta name="description" content="整理課程筆記，留一點空間給思考。">
+  <title>個人筆記整理網站</title>
+  <link rel="stylesheet" href="css/style.css?v=home-2">
+  <script defer src="js/vendor/marked.umd.js"></script>
+  <script defer src="js/main.js?v=home-2"></script>
+</head>
+<body>
+  <a class="skip-link" href="#reader">跳至筆記內容</a>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar" aria-label="課程與搜尋">
+      <a class="brand" href="./" aria-label="個人筆記整理網站首頁"><span class="brand-symbol" aria-hidden="true">▤</span><span>個人筆記整理網站<span class="brand-en">STUDY NOTES</span></span></a>
+      <p class="sidebar-intro">把學過的，慢慢整理成自己的。</p>
+      <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="搜尋筆記內容…" aria-label="搜尋筆記標題與內文" autocomplete="off"><kbd>/</kbd></label>
+      <div class="nav-caption"><span>我的課程</span><span id="course-count">—</span></div>
+      <nav id="courses" aria-label="課程筆記"></nav>
+      <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+      <div class="sidebar-footer"><span class="small-sprout" aria-hidden="true">✳</span><p>一頁一頁，累積理解。<span id="collection-count">正在載入筆記</span></p></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-button mobile-menu" aria-controls="sidebar" aria-expanded="false" aria-label="開啟課程側邊欄">☰</button>
+        <div class="breadcrumb"><a id="home-link" href="./">我的筆記</a><span id="breadcrumb-separator" aria-hidden="true">/</span><span id="breadcrumb-course">課程筆記</span></div>
+        <span class="topbar-label"><span class="status-dot"></span> 個人知識庫</span>
+      </header>
+      <main id="reader" class="reading-layout" tabindex="-1">
+        <section id="home" class="home-panel" aria-labelledby="home-title" hidden>
+          <div class="home-welcome">
+            <p class="home-eyebrow">MY STUDY NOTES</p>
+            <h1 id="home-title">把學過的，慢慢整理成自己的。</h1>
+            <p class="home-description">從左側選擇課程與筆記，開始閱讀與複習。</p>
+          </div>
+          <dl class="home-stats" aria-label="筆記庫統計">
+            <div class="stat-card"><dt><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7V5a1 1 0 0 1 1-1h5l2 3h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg></span>課程總數</dt><dd id="home-course-count">—</dd></div>
+            <div class="stat-card"><dt><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 3v18M12 8h5M12 12h5"/></svg></span>筆記總數</dt><dd id="home-note-count">—</dd></div>
+          </dl>
+          <footer class="reading-footer"><span>個人筆記整理網站 · Study Notes</span><span>讓知識，慢慢長成自己的樣子。</span></footer>
+        </section>
+        <div id="reading-column" class="reading-column">
+          <div class="reading-caption"><span>留一點空間，給思考。</span><span>READ & REFLECT</span></div>
+          <article id="note" class="note-paper" aria-busy="true"><p role="status">正在翻開你的筆記…</p></article>
+          <footer class="reading-footer"><span>個人筆記整理網站 · Study Notes</span><span>讓知識，慢慢長成自己的樣子。</span></footer>
+        </div>
+        <aside class="toc-panel" aria-label="文章目錄">
+          <button id="toc-toggle" class="toc-heading" aria-controls="toc" aria-expanded="true"><span><span aria-hidden="true">≡</span> 本篇目錄</span><span class="toc-chevron" aria-hidden="true">⌄</span></button>
+          <nav id="toc" aria-label="章節目錄"></nav>
+          <div class="toc-bottom">閱讀，理解，再回來看看。</div>
+        </aside>
+      </main>
+    </div>
+  </div>
+  <button id="backdrop" class="backdrop" aria-label="關閉課程側邊欄" hidden></button>
+  <noscript>請啟用 JavaScript，以瀏覽課程筆記與搜尋內容。</noscript>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pr-week-02",
+    "title": "Week 2",
+    "course": "公關策略與企劃",
+    "path": "notes/pr-week-02.md"
+  },
+  {
+    "id": "japan-week-07",
+    "title": "Week 7：中世紀",
+    "course": "日本歷史",
+    "path": "notes/japan-week-07.md"
+  },
+  {
+    "id": "japan-week-08",
+    "title": "Week 8：中世紀",
+    "course": "日本歷史",
+    "path": "notes/japan-week-08.md"
+  },
+  {
+    "id": "digital-marketing-midterm",
+    "title": "期中考筆記",
+    "course": "數位行銷企劃實務",
+    "path": "notes/digital-marketing-midterm.md"
+  }
+]
