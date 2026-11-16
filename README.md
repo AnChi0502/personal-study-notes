@@ -30,22 +30,9 @@
 | --- | --- |
 | 前端 | 原生 HTML、CSS、JavaScript，無前端框架 |
 | 筆記資料 | Markdown 內容與 JSON 索引 |
-| Markdown 解析 | 本機隨附的 Marked，授權見 [marked-license.md](js/vendor/marked-license.md) |
 | 視覺 | 奶油米色、鼠尾草綠強調色，僅提供淺色模式 |
 | 字體 | Noto Sans TC 與等寬程式碼字體；字型無法載入時使用備援字體 |
 | 部署 | 靜態檔案，無須後端、資料庫或建置步驟 |
-
-## 本機執行
-
-需先安裝 Python。在專案根目錄開啟終端機，執行：
-
-```sh
-python -m http.server 4173 --bind 127.0.0.1
-```
-
-使用瀏覽器開啟 [http://127.0.0.1:4173](http://127.0.0.1:4173)。
-
-網站透過 `fetch` 載入筆記，須以 HTTP 伺服器開啟，直接點選 `index.html` 使用 `file://` 瀏覽無法正常載入內容。停止伺服器時，在終端機按 `Ctrl + C`。
 
 ## 專案結構
 
@@ -64,10 +51,6 @@ python -m http.server 4173 --bind 127.0.0.1
 ├── AGENTS.md              內容整理與維護規範
 └── README.md              專案介紹與使用說明
 ```
-
-首頁統計與側邊欄皆以 `notes/index.json` 為資料來源，不寫死課程或筆記數量。新增筆記時，須同時儲存 Markdown 並更新索引；完整流程與圖片引用規則見 [AGENTS.md](AGENTS.md)。
-
-`tools/import-notes.py` 僅針對既有指定 Word 來源與文件結構設計，並非通用匯入工具，瀏覽網站不需要執行它。
 
 ## GitHub Pages 部署
 
